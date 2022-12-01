@@ -2,15 +2,6 @@ package jp.ac.it_college.std.s21023.androidkadai
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupWithNavController
-import com.squareup.moshi.JsonAdapter
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.Types
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import jp.ac.it_college.std.s21023.pokemonquiz.databinding.ActivityMainBinding
-import jp.ac.it_college.std.s21023.pokemonquiz.service.Poke
 import jp.ac.it_college.std.s21023.androidkadai.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,12 +17,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //画面遷移をわかりやすくするため
-        val navController =
-            binding.fragmentContainerView.getFragment<NavHostFragment>().navController
-        binding.toolbar.setupWithNavController(
-            navController,
-            AppBarConfiguration(navController.graph)
-        )
+
     }
 //    private fun initPokemonList() {
 //        val jsonStr = resources.assets.open("ordered_pokemon.json").reader().readText()

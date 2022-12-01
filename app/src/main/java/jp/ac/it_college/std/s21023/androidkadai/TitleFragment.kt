@@ -19,7 +19,7 @@ class TitleFragment : Fragment() {
 
         binding.btStart.setOnClickListener {
             Navigation.findNavController(it).navigate(
-                TitleFragmentDirections.actionTitleFragmentToGenSelectFragment().apply {
+                TitleFragmentDirections.actionTitle3ToByGeneration2().apply {
 
                 }
             )
