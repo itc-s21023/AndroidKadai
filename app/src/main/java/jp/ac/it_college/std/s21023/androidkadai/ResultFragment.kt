@@ -14,7 +14,7 @@ import jp.ac.it_college.std.s21023.AndroidKadai.databinding.FragmentResultBindin
 class ResultFragment : Fragment() {
     private var _binding: FragmentResultBinding? = null
     private val binding get() = _binding!!
-    private val args: ResultFragmentArgs by navArgs()
+    private val args: ResultFragment by navArgs()
 
 
 
@@ -28,11 +28,11 @@ class ResultFragment : Fragment() {
 
         binding.button.setOnClickListener {
             Navigation.findNavController(it).navigate(
-                ResultFragment.actionResultFragmentToGenerationFragment()
+                ResultFragment.actionResult2ToByGeneration2()
             )
         }
         val score = args.score
-        binding.textView4.text = getString(R.string.empty, score)
+        binding.textView4.text = getString(R.string.empty, result)
 
         return binding.root
     }
