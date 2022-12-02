@@ -8,13 +8,14 @@ import android.view.ViewGroup
 import androidx.annotation.UiThread
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.R
 import androidx.navigation.fragment.navArgs
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.squareup.picasso.Picasso
+import jp.ac.it_college.std.s21023.AndroidKadai.databinding.FragmentQuizBinding
 import jp.ac.it_college.std.s21023.androidkadai.json.PokemonInfo
 import jp.ac.it_college.std.s21023.androidkadai.service.PokemonService
-import jp.ac.it_college.std.s21023.androidkadai.databinding.FragmentQuizBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
