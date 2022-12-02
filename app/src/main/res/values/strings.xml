@@ -17,4 +17,7 @@
     <string name="gen_7_select">七世代</string>
     <string name="gen_8_select">八世代</string>
     <string name="gen_select">第%1$d世代</string>
+    <string name="empty">%d</string>
+    <string name="display">世代選択画面に戻る</string>
+    <string name="result">正解数</string>
 </resources>
