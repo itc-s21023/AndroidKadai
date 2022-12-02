@@ -15,7 +15,6 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.squareup.picasso.Picasso
 import jp.ac.it_college.std.s21023.AndroidKadai.databinding.FragmentQuizBinding
 import jp.ac.it_college.std.s21023.androidkadai.json.PokemonInfo
-import jp.ac.it_college.std.s21023.androidkadai.service.PokemonService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
