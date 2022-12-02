@@ -1,41 +1,24 @@
 package jp.ac.it_college.std.s21023.androidkadai.json
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import jp.ac.it_college.std.s21023.AndroidKadai.R
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
 
+@JsonClass(generateAdapter = true)
+data class ImagePoke(
+    val sprites: Sprites
+)
 
-class ResultFragment : Fragment() {
-    private var param1: String? = null
-    private var param2: String? = null
+@JsonClass(generateAdapter = true)
+data class Sprites(
+    val other: Other
+)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+@JsonClass(generateAdapter = true)
+data class Other(
+    @Json(name = "official-artwork") val officialArtwork: OfficialArtwork
+)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_result, container, false)
-    }
-
-    companion object {
-
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ResultFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
-}
+@JsonClass(generateAdapter = true)
+data class OfficialArtwork(
+    @Json(name = "front_default") val frontDefault: String
+)
