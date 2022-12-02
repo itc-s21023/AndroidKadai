@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import jp.ac.it_college.std.s21023.androidkadai.databinding.FragmentTitleBinding
+import jp.ac.it_college.std.s21023.AndroidKadai.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
-    private var _binding:FragmentTitleBinding? = null
+    private var _binding: FragmentTitleBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
