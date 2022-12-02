@@ -2,7 +2,7 @@ package jp.ac.it_college.std.s21023.androidkadai
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import jp.ac.it_college.std.s21023.androidkadai.databinding.ActivityMainBinding
+import jp.ac.it_college.std.s21023.AndroidKadai.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

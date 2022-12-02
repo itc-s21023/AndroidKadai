@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import jp.ac.it_college.std.s21023.androidkadai.databinding.FragmentByGenerationBinding
+import jp.ac.it_college.std.s21023.AndroidKadai.databinding.FragmentByGenerationBinding
 
 class ByGenerationFragment : Fragment() {
     private var _binding: FragmentByGenerationBinding? = null
