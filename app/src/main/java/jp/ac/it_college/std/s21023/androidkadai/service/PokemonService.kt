@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s21023.androidkadai
+package jp.ac.it_college.std.s21023.androidkadai.service
 
 import jp.ac.it_college.std.s21023.androidkadai.json.ImagePoke
 import retrofit2.Call
