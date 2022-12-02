@@ -14,7 +14,7 @@ import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.squareup.picasso.Picasso
 import jp.ac.it_college.std.s21023.AndroidKadai.databinding.FragmentQuizBinding
-import jp.ac.it_college.std.s21023.androidkadai.json.PokemonInfo
+import jp.ac.it_college.std.s21023.androidkadai.json.ImagePoke
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -48,7 +48,7 @@ class QuizFragment : Fragment() {
     }
 
     @WorkerThread
-    private suspend fun getPokemonInfo(id: Int): PokemonInfo {
+    private suspend fun getPokemonInfo(id: Int): ImagePoke {
         return withContext(Dispatchers.IO) {
             val retrofit = Retrofit.Builder().apply {
                 baseUrl(BASE_URL)
@@ -64,7 +64,7 @@ class QuizFragment : Fragment() {
         }
     }
     @UiThread
-    private fun setPokemonInfo(info: PokemonInfo) {
+    private fun setPokemonInfo(info: ImagePoke) {
         val IMG_URL = info.sprites.other.officialArtwork.frontDefault
         Picasso.get().load(IMG_URL).into(binding.viPokemon)
     }
